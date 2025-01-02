@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="Images/S108.png" sizes="16x16">
+	<link rel="apple-touch-icon" href="Images/S108.png">
+    <title>SIDICK ABDOULAYE HISSEIN - CV</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Times New Roman", serif;
+            line-height: 1.6;
+            color: #fff;
+            background: url('Images/S001.png') center/cover no-repeat;
+			overflow-x: hidden;
+		}
+
+        div, nav {
+            padding: 2px;
+        }
+
+        header {
+            height: 90vh;
+            background: url('Images/SI1.jpg') center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        .A {
+            height: 60vh;
+            background: url('Images/SA3.jpg') center/cover no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+        }
+        .A::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 90%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+		.A:hover{
+			background: url('Images/SA2.jpg') center/cover no-repeat;
+			transition: .7s;
+		}
+		.A img {
+			margin-right: 40%;
+		}
+
+        header h1 {
+            z-index: 2;
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            z-index: 2;
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        header a {
+            z-index: 2;
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            color: #000;
+            background-color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            z-index: 2;
+        }
+
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+			font-family: 'Allura', cursive;
+			color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+            background-color: transparent;
+        }
+
+        nav ul li a:hover {
+            color: #00cc99;
+			text-decoration: none;
+        }
+
+        nav ul li:last-child {
+            padding-right: 10px;
+        }
+
+        nav .subscribe {
+            padding: 0.5rem 1rem;
+            color: #fff;
+            background-color: #00cc99;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+			margin-top: 10px;
+        }
+
+        nav .subscribe:hover {
+            background-color: #009973;
+			text-decoration: none;
+        }
+
+        section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 3rem 2rem;
+            border-radius: 6px;
+            margin: 80px 0;
+            max-width: 2000px;
+            color: #fff;
+			background-color: #f0f9ec;
+        }
+		
+		@media (max-width: 768px) {
+    section {
+        flex-direction:column; /* Stack the content vertically */
+        text-align:justify-all; /* Optional: Center the text */
+		margin: 10px 0;
+		padding: 5px;
+    }
+    sectiont .content{
+        width: 200%; /* Full width for the text */
+		height: auto;
+		margin: 0;
+    }
+}
+        section img {
+            margin-right: 20px;
+            border-radius: 10px;
+			width: 40%;
+        }
+        .services img {
+            max-width: 45%;
+            border-radius: 10px;
+			width: 40%;
+        }
+
+        section .content {
+            max-width: 50%;
+        }
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        section p {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+			color: #000;
+        }
+
+        section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        section ul li {
+            margin-bottom: 0.5rem;
+			color: #000;
+        }
+
+        section ul li::before {
+            content: '+';
+            margin-right: 0.5rem;
+            color: #00cc99;
+        }
+
+        h2 {
+            font-family: "Times New Roman", serif;
+            font-size: 50%;
+            color: cornflowerblue;
+        }
+
+        a {
+            color: #00cc99;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+		footer {
+			background-color: #1a2238; /* Dark blue color */
+			color: #fff; /* White text */
+			padding: 4rem 1rem;
+			margin-top: 0rem;
+		}
+		.footer-container {
+			max-width: 1200px;
+			margin: 0 auto 1rem;
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+			flex-wrap: wrap;
+			gap: 1.5rem;
+			margin-top: 2rem;
+		}
+		.footer-left h3 {
+			font-size: 1.5rem;
+			margin-bottom: 0.5rem;
+		}
+		.footer-left p {
+			font-size: 1rem;
+			margin-bottom: 0.5rem;
+		}
+		.footer-links ul {
+			list-style: none;
+			padding: 0;
+		}
+		.footer-links ul li {
+			margin-bottom: 0.5rem;
+		}
+		.footer-links ul li a {
+			color: #fff;
+			text-decoration: none;
+			font-size: 1rem;
+		}
+		.footer-links ul li a:hover {
+			color: #00cc99; /* Highlight color */
+			text-decoration: underline;
+		}
+		.footer-socials a {
+			margin: 0 0.5rem;
+			text-decoration: none;
+			display: inline-block;
+			transition: transform 0.3s ease;
+		}
+		.footer-socials img {
+			width: 25px;
+			height: 25px;
+		}
+		.footer-socials a:hover {
+			transform: scale(1.1);
+		}
+		.footer-socials img:hover {
+			filter: invert(80%) sepia(40%) saturate(300%) hue-rotate(120deg); /* Green hover effect */
+		}
+		.services {
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+			flex-wrap: wrap;
+			gap: 1.5rem;
+			padding: 3rem 3rem;
+			background-color: #f0f9ec; /* Light green background */
+		}
+		.service-card {
+			background: #fff;
+			border-radius: 10px;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+			padding: 1rem;
+			text-align: center;
+			flex: 1;
+			max-width: 22%;
+			min-width: 250px; /* Adjust for responsiveness */
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+		}
+		.service-card:hover{
+			background-color: aqua;
+			transition: .7s;
+		}
+		.service-card img {
+			width: 200%;
+			border-radius: 10px;
+			margin-bottom: 2rem;
+		}
+		.service-card h3 {
+			font-size: 1.25rem;
+			margin: 0.5rem 0;
+			color: orangered;
+		}
+		.service-card p {
+			font-size: 0.9rem;
+			color: #555;
+			margin-bottom: 1rem;
+			flex-grow: 1;
+		}
+		.service-card button {
+			background-color: orangered;
+			color: #1a2238;
+			padding: 0.5rem 1rem;
+			border: none;
+			border-radius: 20px;
+			cursor: pointer;
+			font-size: 0.9rem;
+			transition: background-color 0.3s ease;
+		}
+		.service-card button:hover {
+			background-color: #009966;
+		}
+		.service-card:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+		}
+		.service-card a{
+			text-decoration: none;
+			color: black;
+		}
+		.services1 {
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+			flex-wrap: wrap;
+			gap: 1.5rem;
+			padding: 0rem 9rem 9rem 9rem;
+			background-color: #f0f9ec; /* Light green background */
+		}
+		.service-card1 {
+			background: transparent;
+			border-radius: 10px;
+			padding: 1rem;
+			text-align: center;
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+			height: 30%;
+			width: 20%;
+			border: 1px solid #4CAF50;
+		}
+		.service-card1 img {
+			width: 50%;
+			border-radius: 10px;
+		}
+		.service-card1:hover{
+			background-color: #fff;
+			transition: .2s;
+			transform: translateY(-10px);
+			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+			border: 1px solid red;
+		}
+		.service-card1 p{
+			font-size: 0.9rem;
+			color: black;
+			margin-bottom: 1rem;
+			flex-grow: 1;
+		}
+		.service-card1 span{
+			color: red;
+		}
+		@media (min-width: 1024px) and (max-width: 1366px) {
+			.services1 {
+				padding: 1.5rem; /* Reduce padding for smaller laptops */
+				gap: 0.75rem; /* Reduce spacing */
+			}
+			.service-card1 {
+				flex: 1 1 calc(30% - 0.75rem); /* Slightly larger cards (3 per row) */
+			}
+		}
+
+/* Media Queries for Tablets and Small Laptops */
+		@media (max-width: 1024px) {
+			.services1 {
+				flex-direction: row;
+				padding: 1rem; /* Minimal padding for smaller devices */
+			}
+			.service-card1 {
+				flex: 1 1 calc(45% - 1rem); /* Two cards per row */
+				margin-bottom: 1rem; /* Add spacing at the bottom of each card */
+			}
+		}
+
+/* Mobile Screens */
+		@media (max-width: 768px) {
+			.service-card1 {
+				flex: 1 1 50%; /* Full width for mobile */
+			}
+		}
+		.content h1,p{
+			color: #00cc99;
+			position: relative;
+		}
+		.content1 h1,p{
+			color: #00cc99;
+			position: relative;
+		}
+		.content1 h1:after{
+			content: "";
+			background: linear-gradient(to right, red, blue);
+			width: 50%;
+			height: 5%;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			margin-left: 25%;
+			margin-bottom: 1%;
+		}
+        .navbar {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            padding: 2px;
+            background-color: transparent;
+            transition: background-color 0.3s ease;
+            color: black;
+        }
+
+        .navbar.scrolled {
+            background-color: #4CAF50;
+        }
+		.navbar.scrolled li a{
+			color: cyan;
+		}
+		.navbar.scrolled .logo{
+			color: cyan;
+		}
+		.navbar.scrolled li a:hover{
+			color: orangered;
+			text-decoration: none;
+			transition: .5s;
+		}
+		.Q {
+			padding: 0.75rem 1.5rem;
+			font-size: 1rem;
+			color: #00cc99; /* White text color */
+			background-color: transparent; /* Transparent background */
+			border: 2px solid #fff; /* White border */
+			border-radius: 25px; /* Rounded corners */
+			text-decoration: none; /* Remove underline */
+			font-weight: bold; /* Bold text */
+			cursor: pointer; /* Show hand cursor */
+			transition: all 0.3s ease; /* Smooth hover effects */
+		}
+		.Q:hover {
+			background-color: #00cc99; /* Change to white on hover */
+			color: #fff; /* Change text to black on hover */
+			transform: scale(1.05); /* Slight zoom effect */
+			box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+			border: 2px solid #009966;
+			text-decoration: none;
+		}
+		.navbar .logo {
+			font-size: 20px;
+		}
+		.menu {
+			display: flex;
+			list-style: none;
+			gap: 20px;
+		}
+		.menu li {
+			cursor: pointer;
+		}
+		.hamburger {
+			display: none;
+			flex-direction: column;
+			cursor: pointer;
+			margin-right: 20px;
+		}
+		.hamburger span {
+			background: white;
+			height: 3px;
+			width: 25px;
+			margin: 4px 0;
+		}
+		@media screen and (max-width: 768px) {
+			.menu {
+				display: none;
+				flex-direction: column;
+				background-color: black;
+				position: absolute;
+				top: 50px;
+				right: 20px;
+				width: 150px;
+				border-radius: 8px;
+			}
+			.menu li {
+				padding: 10px;
+				text-align: center;
+			}
+			.menu.active {
+				display: flex;
+			}
+			.hamburger {
+				display: flex;
+			}
+		}
+
+        /* Optional styles for the menu */
+        .menu.active {
+            display: block;
+        }
+
+        /* Add styles for Back-to-Top button */
+        #backToTop {
+            padding: 10px;
+            font-size: 14px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+		#backToTop:hover{
+			background-color: orangered;
+		}
+		*, *::before, *::after {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+		.b{
+			background-color: #f0f9ec;
+			font-family: cursive;
+			font-size: 30px;
+			color: black;
+			padding-top: 10%;
+			text-align: center;
+			margin-top: -10%;
+			padding-bottom: 4%;
+		}
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo" ><strong>SINO BOUR<br>SIDICK ABKOULAYE</strong></div>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="register.html" class="subscribe">Subscribe</a></li>
+            </ul>
+			<div class="hamburger" onclick="toggleMenu()">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+        </nav>
+        <div class="content1" id="home">
+            <h1>Welcome to My CV</h1>
+            <p>A dedicated computer science data science student with a passion for innovation and excellence.</p>
+        </div>
+		<a href="education.html" class="Q">Learn More</a>
+    </header>
+
+    <section id="about">
+        <img src="Images/SA6.jpg" alt="About Me" loading="lazy">
+        <div class="content">
+            <h2>About Me</h2>
+            <p>I am SIDICK ABDOULAYE HISSEIN, a Chadian student in Kigali, Rwanda, pursuing a degree in Computer Science Data Science at kigali Independent University (ULK), currently in my second year.</p>
+            <p>I speak French, Arabic, and English. In my free time, I enjoy going out drinking coffee and spending quality time with friends.</p>
+        </div>
+    </section>
+
+    <section id="education">
+        <img src="Images/S11.jpg" alt="Education" loading="lazy">
+        <div class="content">
+            <h2>Education</h2>
+            <ul>
+                <li>ATTESTATION PROVISOIRE D'ADMISSION AU BEF - BEFA, August 2020, Bokoro (Chad)</li>
+                <li>CERTIFICAT D'ADMISSION BACCALEAUREAT DE L'ENSEIGNEMENT SECONDAIRE GENERAL, July 2023, Abeche (Chad), Mention: Assez-bien</li>
+                <li>English Certificate from WIBENA Center, Kigali, obtained on August 5, 2024</li>
+                <li>Training Certificate: Participated in "Rwanda, a Development Model for a New Departure towards the Emergence of Africa," organized by OPPRC on June 19, 2024</li>
+                <li>Certificate of Participation in PMLTR Event (Best Chadian Winner Prize in Rwanda), organized by OETIIR</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <img src="Images/S12.jpg" alt="Projects" loading="lazy">
+        <div class="content">
+            <h2>Projects</h2>
+            <p>As a student, I am continually working on academic projects and exploring real-world applications in Computer Science Data Science. My focus is on enhancing skills through practical experience and teamwork.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <img src="Images/SA4.jpg" alt="Contact" loading="lazy">
+        <div class="content">
+            <h2>Contact Information</h2>
+            <p>Email: sidickabdoulayesino1@gmail.com</p>
+            <p>Phone: +235 65 77 17 16</p>
+            <p>Phone: +250 793 22 58 53</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/example">LinkedIn Profile</a></p>
+        </div>
+    </section>
+	
+	<div class="b"> WELCOM... </div>
+
+	<div class="services1">
+    <div class="service-card1">
+        <img src="Images/H4.png" alt="Hamit Ahmad's photo1" loading="lazy">
+        <p><span>“</span>N'essayez pas de devenir un homme qui a du succès. Essayez de devenir un homme qui a de la valeur.<span>”</span></p><br>
+		<p><span>“</span> Don't try to become a successful man. Try to become a man of value .<br> <span>”</span></p>
+    </div>
+    <div class="service-card1">
+        <img src="Images/H3.png" alt="Nariman Osman's photo1" loading="lazy">
+        <p><span>“</span> The goal of Education is the advancement of knowledge and the dissemination of truth.<span>”</span></p><br>
+		<p><span>“</span> Le but de l'éducation est l'avancement des connaissances et la diffusion de la vérité.<span>”</span></p>
+    </div>
+    <div class="service-card1">
+        <img src="Images/H2.png" alt="Sidick Abdoulaye's photo1" loading="lazy">
+        <p><span>“</span> A scientific mistake can kill people, but a cultural mistake can kill generations!<span>”</span></p><br>
+		<p><span>“</span> Une erreur scientifique peut tuer des personnes, mais une erreur culturelle peut tuer des générations!<span>”</span></p>
+    </div>
+    <div class="service-card1">
+        <img src="Images/H1.png" alt="Saleh Ali's photo1" loading="lazy">
+        <p><span>“</span> Logic will take you from point A to B, Imagination and Audacity will take you wherever you want to go.<span>”</span></p><br>
+		<p><span>“</span>La logique vous conduira d'un point A à pont B, l'Imagination et l'Audace vous conduiront où vous le désirez.<span>”</span></p>
+    </div>
+	</div>
+	
+	<div class="services">
+    <div class="service-card">
+        <img src="Images/SA1.jpg" alt="Hamit Ahmad's photo" loading="lazy">
+        <h3>HAHIT  AHMAD<br>BRAHIM</h3>
+        <p>Chadian student in Rwanda in computer science data science in second year at kigali Independent University (ULK).</p>
+		<p>Étudiant tchadien au Rwanda en informatique science des données en deuxième année à l'Université Libre de Kigali (ULK).</p>
+        <button><a href="index1.html">More about HAMIT</a></button>
+    </div>
+    <div class="service-card">
+        <img src="Images/SS1.jpg" alt="Nariman Osman's photo" loading="lazy">
+        <h3>NARIMAN  OSMAN<br>ROBO</h3>
+        <p>Sudanese student in Rwanda in computer science data science in second year at kigali Independent University (ULK).</p>
+		<p>Étudiant soudanais au Rwanda en informatique science des données en deuxième année à l'Université Libre de Kigali (ULK).</p>
+        <button><a href="#home">More about NARIMAN</a></button>
+    </div>
+    <div class="service-card">
+        <img src="Images/SS7.jpg" alt="Sidick Abdoulaye's photo" loading="lazy">
+        <h3>SIDICK  ABDOULAYE<br>HISSEIN</h3>
+        <p>Chadian student in Rwanda in computer science data science in second year at kigali Independent University (ULK).</p>
+		<p>Étudiant tchadien au Rwanda en informatique science des données en deuxième année à l'Université Libre de Kigali (ULK).</p>
+        <button><a href="education.html">More about SIDICK</a></button>
+    </div>
+    <div class="service-card">
+        <img src="Images/SS6.jpg" alt="Saleh Ali's photo" loading="lazy">
+        <h3>SALEH  ALI <br> MAHMOUD</h3>
+        <p> Chadian student in Rwanda in social science in second year at kigali Independent University<br> (ULK).</p>
+		<p>Étudiant tchadien au Rwanda en science sociale en deuxième année à l'Université Libre de Kigali (ULK).</p>
+        <button><a href="#home">More about SALEH</a></button>
+    </div>
+	</div>
+	<div class="A">
+		<img src="Images/S108-removebg-preview.png" alt="Dog walking" loading="lazy">
+	</div>
+
+	<footer>
+    <div class="footer-container">
+        <div class="footer-left">
+            <h3>Enjoy My Portfolio</h3>
+            <p>Craft unique projects and experiences in computer science data science.  
+            I aim to build real-world solutions with innovation and dedication.</p>
+            <p>No coding skills required to understand or explore!</p>
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-socials">
+            <a href="https://twitter.com"><img src="Images/S105.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/sidick_abdoulaye_sino"><img src="Images/S106.png" alt="Instagram"></a>
+            <a href="https://linkedin.com"><img src="Images/S103.png" alt="LinkedIn"></a>
+            <a href="https://www.facebook.com/sidickabdoulaye.sino?mibextid=ZbWKwL"><img src="Images/S104.png" alt="Facebook"></a>
+            <a href="https://whatsApp.com"><img src="Images/S107.png" alt="WhatsApp"></a>
+        </div>
+    </div>
+	</footer>
+	<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navbar = document.querySelector('.navbar');
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+        });
+    </script>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+    <script>
+        // Back-to-Top Button Functionality
+        document.addEventListener('DOMContentLoaded', () => {
+            const backToTopButton = document.createElement('button');
+            backToTopButton.id = 'backToTop';
+            backToTopButton.textContent = '↑ Top';
+            backToTopButton.style.display = 'none';
+            backToTopButton.style.position = 'fixed';
+            backToTopButton.style.bottom = '20px';
+            backToTopButton.style.right = '20px';
+            backToTopButton.style.zIndex = '1000';
+            document.body.appendChild(backToTopButton);
+
+            // Show the button when scrolling down
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTopButton.style.display = 'block';
+                } else {
+                    backToTopButton.style.display = 'none';
+                }
+            });
+
+            // Scroll to top when the button is clicked
+            backToTopButton.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
