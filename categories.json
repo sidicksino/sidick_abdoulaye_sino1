@@ -1,0 +1,37 @@
+  {
+    "title": "Boissons",
+    "description": "Jus, sodas, eau, thé, café...",
+    "image": "boisson.jpeg",
+    "alt": "Boissons"
+  },
+  {
+    "title": "Végétaux",
+    "description": "Fruits frais, légumes verts, racines...",
+    "image": "vegetaux.jpeg",
+    "alt": "Végétaux"
+  },
+  {
+    "title": "Alimentation",
+    "description": "Riz, pain, céréales, farines...",
+    "image": "alim.png",
+    "alt": "Alimentation"
+  },
+  {
+    "title": "Produits Animaliers",
+    "description": "Viandes, œufs, laitages...",
+    "image": "viande.jpeg",
+    "alt": "Produits Animaliers"
+  },
+  {
+    "title": "Produits Transformés",
+    "description": "Conserves, confitures, huiles...",
+    "image": "transforme.jpeg",
+    "alt": "Produits Transformés"
+  },
+  {
+    "title": "Autres",
+    "description": "Accessoires, cosmétiques naturels...",
+    "image": "autre.jpeg",
+    "alt": "Autres"
+  }
+];
